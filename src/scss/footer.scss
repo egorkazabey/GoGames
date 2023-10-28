@@ -1,0 +1,40 @@
+.footer {
+	&__line {
+		border: 1.5px solid #816F8C;
+	}
+	&__container {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__copy {
+		margin-top: 71px;
+	}
+	&__social {
+		margin-top: 62px;
+		display: flex;
+		gap: 18px;
+	}
+	&__banner {
+		padding: 25px 0 19px 0;
+	}
+}
+
+.social__img {
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	box-shadow: -1px -1px 8px 0px rgba(255, 255, 255, 0.08);
+	background: #FCD8CB;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.social__ico {
+	padding-top: 3px;
+}
+
+.social__img:hover img {
+	transform: scale(1.3);
+	transition: transform 0.25s;
+  }

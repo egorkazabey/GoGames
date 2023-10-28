@@ -1,0 +1,6 @@
+node_modules/
+gulp
+dist
+gulpfile.js
+package-lock.json
+package.json
