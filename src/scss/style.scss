@@ -15,6 +15,7 @@ $maxWidthContainer: 1167;
 $md1: 1025.98;
 $md2: 881.98;
 $md3: 479.98;
+$md4: 687.98;
 
 $backgroundColor: #FFE6D7;
 $lightBlackColor: #446381;
@@ -64,3 +65,229 @@ body {
 @import "footer";
 // <CONNECTING PAGE STYLES AND ELEMENTS>=============================================
 
+// ======================PRICING ===================================
+
+.smallText {
+	font-size: 23px;
+	color: $lightBlackColor;
+	line-height: 24px;
+}
+
+.titles {
+	font-size: 61px;
+	color: $redColor;
+	font-weight: 700;
+	line-height: 75px;
+}
+
+.pricing {
+	padding: 48px 0 73px 0;
+	&__smallText {
+		text-align: center;
+	}
+	&__title {
+		text-align: center;
+	}
+	&__cards {
+		margin-top: 70px;
+		display: flex;
+		justify-content: center;
+		gap: 42px;
+	}
+	&__card {
+		padding: 36px 0 47px 46px;
+		border-radius: 20px;
+		width: 360.182px;
+		height: 566px;
+		background: #FBDACF;
+		box-shadow: 0px 20px 50px 0px rgba(132, 148, 205, 0.08);
+	}
+}
+
+.card {
+	&__title {
+		font-size: 32px;
+		font-weight: 700;
+		line-height: normal;
+		color: $lightBlackColor;
+		margin-bottom: 33px;
+	}
+	&__price {
+		margin-bottom: 28px;
+		text-wrap: nowrap;
+		font-weight: 700;
+		color: $redColor;
+		line-height: 0px;
+		span {
+			font-size: 50px;
+			line-height: normal !important;
+		}
+	}
+	&__btn {
+			margin-top: 46px;
+			color: $whiteColor;
+			line-height: 24px;
+			font-size: 18px;
+		width: 267px;
+		height: 50px;
+		border-radius: 25px;
+		background: var(--gradient, linear-gradient(93deg, #4499D9 11.62%, #6E6CC1 75.39%));
+	}
+}
+
+.list {
+	&__text {
+		font-size: 18px;
+		line-height: 25px;
+		padding-left: 13px;
+	}
+}
+
+.wrap {
+    position: relative;
+    margin-top: 10px;
+}
+
+.check-sign {
+    position: absolute;
+    background: #486482;
+}
+
+#check-part-1 {
+    width: 9px;
+    height: 1.5px;
+    transform: rotate(45deg);
+}
+
+#check-part-2 {
+	width: 12.5px;
+    height: 1.5px;
+    transform: rotate(135deg);
+    left: 5.6px;
+    top: -2px;
+}
+
+.card {
+	&__list {
+		
+	}
+}
+
+.pricing__card {
+	&:hover {
+		transition: 1s;
+		background: linear-gradient(180deg, #446381 0%, #826F8C 100%);
+		.card__title {
+			transition: 1s;
+			color: $whiteColor;
+		}
+		.list__text {
+			transition: 1s;
+			color: $whiteColor;
+		}
+		.check-sign {
+			transition: 1s;
+			background-color: $whiteColor;
+		}
+	}
+}
+
+.list {
+	&__text {
+		top: -15px;
+		position: relative;
+		left: 28px;
+	}
+}
+
+
+// ====================VR=========================
+
+.VR {
+	// position: absolute;
+	height: 100%;
+	&__container {
+		display: flex;
+		gap: 76px;
+	}
+	&__images {
+		padding-top: 104px;
+		height: 710px;
+	}
+	&__right {
+		padding-left: -30px;
+		padding-top: 164px;
+	}
+	&__title {
+		margin: 30px 0 24px 0;
+	}
+	&__btn {
+		margin-top: 28px;
+	}
+}
+
+.img {
+	&__screen {
+	}
+	&__men {
+		// max-width: 100%;
+		// max-height: 100%;
+	}
+}
+
+.images__screen {
+    left: 240px;
+    top: -710px;
+    position: relative;
+	max-width: 100%;
+	max-height: 100%;
+	animation: 3s linear infinite flying;
+	animation-timing-function: 2s;
+}
+
+
+@keyframes flying {
+	0%, 100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(5%);
+	}
+}
+
+// ========================XBOX====================
+
+.XBOX {
+	padding-top: 100px;
+	&__container {
+		display: flex;
+		flex-direction: row-reverse;
+		gap: 37px;
+	}
+	&__title {
+		margin-top: 30px;
+		margin-bottom: 25px;
+	}
+	&__btn {
+		margin-top: 29px;
+	}
+}
+
+.img {
+	&__big-gear {
+		left: 318px;
+		top: -534px;
+		position: relative;
+		max-width: 100%;
+		max-height: 100%;
+		animation: 6.5s linear infinite reverse rotating;
+	}
+	&__small-gear {
+		left: 98px;
+		top: -464px;
+		position: relative;
+		max-width: 100%;
+		max-height: 100%;
+		animation: 6.5s linear infinite reverse rotating;
+	}
+}

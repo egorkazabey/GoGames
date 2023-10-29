@@ -38,3 +38,54 @@
 	transform: scale(1.3);
 	transition: transform 0.25s;
   }
+
+
+  @media (max-width: #{$md3}px) {
+	.footer {
+		&__container {
+			display: flex !important;
+			flex-direction: column;
+		}
+		&__banner {
+			margin: 0 auto;
+		}
+		&__copy {
+			margin: 0 auto;
+		}
+		&__social {
+			margin: 30px auto;
+		}
+	}
+  }
+
+  .adaptive-copy {
+	display: none;
+  }
+
+  @media (max-width: #{$md2}px) {
+	.adaptive-copy {
+		display: block !important;
+		text-wrap: nowrap;
+		text-align: center;
+	}
+	.footer__copy {
+		display: none;
+	}
+  }
+
+  @media (max-width: #{$md4}px) {
+	.footer {
+	&__container {
+		flex-direction: column;
+	}
+	&__banner {
+		margin: 0 auto;
+	}
+	&__copy {
+		margin: 0 auto;
+	}
+	&__social {
+		margin: 30px auto;
+	}
+  }
+} 
