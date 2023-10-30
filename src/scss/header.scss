@@ -1,5 +1,5 @@
 .header {
-	// background: url('../img/header/bg.jpg')
+	// background: url('../img/header/bg.jpg') cover (center/center) no-repeat;
 	// height: 1096px;
 	&__banner {
 		padding-bottom: 139px;
@@ -46,36 +46,9 @@
 		font-size: 18px;
 }
 
-.buttons {
-    text-decoration: none;
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
-	text-transform:  uppercase;
-    transition: .2s ease-in-out;
-}
-.buttons:before {
-    content: "";
-    // background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
-    height: 60px;
-    width: 50px;
-    position: absolute;
-    top: 0px;
-    left: -80px;
-    transform: skewX(-45deg);
-}
 .buttons:hover {
     background: var(--gradient, linear-gradient(93deg, #2e9aed 11.62%, #121075 75.39%));;
     color: #fff !important;
-}
-.buttons:hover:before {
-    left: 100%;
-    transition: .5s ease-in-out;
-}
-.buttons:focus {
-    background: var(--gradient, linear-gradient(93deg, #2e9aed 11.62%, #121075 75.39%));;
-    color: #fff !important;
-    outline: none;
 }
 
 .card__btn:hover {
@@ -262,6 +235,13 @@ a:hover {
 
 
 @media (max-width: #{$md2}px) {
+	.header__container {
+		text-align: center;
+	}
+	.left__decoration {
+		top: -70px;
+		z-index: -1;
+	}
 	.left__shortText .decoration {
 		gap: 10px;
 	}

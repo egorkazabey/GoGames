@@ -16,6 +16,7 @@ $md1: 1025.98;
 $md2: 881.98;
 $md3: 479.98;
 $md4: 687.98;
+$md5: 990.98;
 
 $backgroundColor: #FFE6D7;
 $lightBlackColor: #446381;
@@ -67,6 +68,19 @@ body {
 
 // ======================PRICING ===================================
 
+.pricing__cards .mobile {
+	// display: none;
+}
+.pricing__card .mobile {
+	// display: none;
+}
+
+.swiper {
+	width: 100%;
+	height: 300px;
+	// display: none;
+  }
+
 .smallText {
 	font-size: 23px;
 	color: $lightBlackColor;
@@ -92,9 +106,13 @@ body {
 		margin-top: 70px;
 		display: flex;
 		justify-content: center;
-		gap: 42px;
+		gap: 20px;
 	}
 	&__card {
+		max-width: 100%;
+		max-height: 100%;
+		width: 360.182px;
+		height: 566px;
 		padding: 36px 0 47px 46px;
 		border-radius: 20px;
 		width: 360.182px;
@@ -201,10 +219,25 @@ body {
 }
 
 
+@media (max-width: #{$md5}px) {
+	.pricing__cards {
+		flex-direction: column;
+		align-items: center;
+	}
+	.swiper {
+		display: block !important;
+		width: 100%;
+		height: 100%;
+	}
+	.mobile {
+		display: block;
+	}
+}
+
 // ====================VR=========================
 
 .VR {
-	// position: absolute;
+	padding-top: 80px;
 	height: 100%;
 	&__container {
 		display: flex;
@@ -212,7 +245,7 @@ body {
 	}
 	&__images {
 		padding-top: 104px;
-		height: 710px;
+		max-height: 710px;
 	}
 	&__right {
 		padding-left: -30px;
@@ -245,6 +278,9 @@ body {
 	animation-timing-function: 2s;
 }
 
+.images__men-screen {
+	display: none;
+}
 
 @keyframes flying {
 	0%, 100% {
@@ -252,6 +288,33 @@ body {
 	}
 	50% {
 		transform: translateY(5%);
+	}
+}
+
+@media (max-width: #{$md2}px) {
+	.VR {
+		padding-top: 0;
+		&__container {
+			flex-direction: column;
+			text-align: center;
+		}
+		&__images {
+			height: 400px;
+		}
+	}
+
+	.images__men-screen {
+		display: block;
+		width: 100%;
+	}
+	.img__screen {
+		display: none;
+		left: 370px;
+		// width: 20%;
+	}
+	.img__men {
+		width: 100%;
+		display: none;
 	}
 }
 
@@ -289,5 +352,23 @@ body {
 		max-width: 100%;
 		max-height: 100%;
 		animation: 6.5s linear infinite reverse rotating;
+	}
+}
+
+@media (max-width: #{$md2}px) {
+	.XBOX {
+		&__container {
+			text-align: center;
+			flex-direction: column;
+		}
+	}
+	.img__gamepad {
+		width: 100%;
+	}
+	.img__small-gear {
+		display: none;
+	}
+	.img__big-gear {
+		display: none;
 	}
 }

@@ -9,6 +9,7 @@
 			<section class="VR">
 				<div class="VR__container">
 					<div class="VR__images">
+						<img src="img/VR/illutration_adaptive.png" alt="" class="images__men-screen">
 						<img src="img/VR/men.png" alt="" class="img__men">
 						<div class="images__screen">
 							<img src="img/VR/screen.png" alt="" class="img__screen">	
@@ -47,7 +48,7 @@
 				<div class="pricing__container">
 					<div class="pricing__smallText smallText">Our Pricing</div>
 					<div class="pricing__title titles">Choose Your Plan</div>
-	
+			
 					<div class="pricing__cards">
 						<div class="pricing__card">
 							<div class="card__title">Basic</div>
@@ -79,9 +80,11 @@
 								</div>
 								<li class="list__text">10 users included</li>
 							</ul>
-							<button class="card__btn">Select This Plan</button>
+							<div class="card__btns">
+								<button class="card__btn">Select This Plan</button>
+							</div>
 						</div>
-	
+
 						<div class="pricing__card">
 							<div class="card__title">Standard</div>
 							<div class="card__price"><span>$95.00</span> / Per Hour</div>
@@ -112,9 +115,10 @@
 								</div>
 								<li class="list__text">10 users included</li>
 							</ul>
-							<button class="card__btn">Select This Plan</button>
+							<div class="card__btns">
+								<button class="card__btn">Select This Plan</button>
+							</div>
 						</div>
-	
 						<div class="pricing__card">
 							<div class="card__title">Premium</div>
 							<div class="card__price"><span>$120.00</span> / Per Hour</div>
@@ -145,13 +149,16 @@
 								</div>
 								<li class="list__text">10 users included</li>
 							</ul>
-							<button class="card__btn">Select This Plan</button>
-						</div>
+							<div class="card__btns">
+								<button class="card__btn">Select This Plan</button>
+								</div>
+							</div>
 					</div>
-				</div>
-			</section>
+		</div>
+		</section>
         </main>
         @@include('html/footer.html', {})
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="js/app.min.js"></script>
     </div>
     </body>
