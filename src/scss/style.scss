@@ -68,12 +68,6 @@ body {
 
 // ======================PRICING ===================================
 
-.pricing__cards .mobile {
-	// display: none;
-}
-.pricing__card .mobile {
-	// display: none;
-}
 
 .swiper {
 	width: 100%;
@@ -185,11 +179,7 @@ body {
     top: -2px;
 }
 
-.card {
-	&__list {
-		
-	}
-}
+
 
 .pricing__card {
 	&:hover {
@@ -256,15 +246,6 @@ body {
 	}
 	&__btn {
 		margin-top: 28px;
-	}
-}
-
-.img {
-	&__screen {
-	}
-	&__men {
-		// max-width: 100%;
-		// max-height: 100%;
 	}
 }
 
